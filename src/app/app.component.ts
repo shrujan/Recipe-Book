@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Recipe';
+  viewSelected = 'recipe';
+
+  showViews (view: string) {
+      console.log(view);
+      this.viewSelected = view;
+  }
 }

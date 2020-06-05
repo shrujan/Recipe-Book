@@ -1,10 +1,10 @@
 
-<app-header></app-header>
+<app-header (featureSelected) = "showViews($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipe></app-recipe>
-      <app-shopping></app-shopping>
+      <app-recipe *ngIf="viewSelected === 'recipe'"></app-recipe>
+      <app-shopping *ngIf="viewSelected === 'shopping-list'"></app-shopping>
     </div>
   </div>
 </div>
