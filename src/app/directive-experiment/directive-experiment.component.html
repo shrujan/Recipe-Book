@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <button
+          class="btn btn-primary"
+          (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
+        <br><br>
+        <ul class="list-group">
+            <div *ngIf="onlyOdd === true">
+                <li
+                    class="list-group-item"
+                    *ngFor="let number of numberOdd; let i = index;"
+                    [ngClass] = "{oddColor: number % 2 !== 0}"
+                    [ngStyle] = "{backgroundColor: number % 2 !== 0 ? 'yellow': 'transparent'}"
+
+                >
+                ({{i}}) --> {{ number }}
+                </li>
+
+            </div>
+
+            <div *ngIf="onlyOdd === false">
+                <li
+                    class="list-group-item"
+                    *ngFor="let number of numberEven; let i = index;"
+                    [ngClass] = "{evenColor: number % 2 === 0}"
+                    [ngStyle] = "{backgroundColor: number % 2 === 0 ? '#a2e4cf': 'transparent'}"
+
+                >
+                ({{i}}) --> {{ number }}
+                </li>
+
+            </div>
+          
+
+          
+        </ul>
+
+        <ng-template [ngIf]="onlyOdd">
+          <p appHighlightText>Only odd</p>
+          <p appHighlightTextBetter>This is the better attribute directive using renderer</p>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  

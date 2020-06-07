@@ -11,6 +11,11 @@ import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component'
 import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingEditComponent } from './shopping/shopping-edit/shopping-edit.component';
+import { DirectiveExperimentComponent } from './directive-experiment/directive-experiment.component';
+
+//Custom Directives
+import { basicHighlight } from './directive-experiment/attribute-directive/basicHighlight';
+import { HighlightTextBetterDirective } from './directive-experiment/attribute-directive-better-approach/highlight-text-better.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,10 @@ import { ShoppingEditComponent } from './shopping/shopping-edit/shopping-edit.co
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    DirectiveExperimentComponent,
+    basicHighlight,
+    HighlightTextBetterDirective,
   ],
   imports: [
     BrowserModule,
