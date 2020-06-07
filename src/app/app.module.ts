@@ -16,6 +16,7 @@ import { DirectiveExperimentComponent } from './directive-experiment/directive-e
 //Custom Directives
 import { basicHighlight } from './directive-experiment/attribute-directive/basicHighlight';
 import { HighlightTextBetterDirective } from './directive-experiment/attribute-directive-better-approach/highlight-text-better.directive';
+import { HighlightTextBetterBindingDirective } from './directive-experiment/attribute-directive-better-approach/highlight-text-better-binding.directive';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { HighlightTextBetterDirective } from './directive-experiment/attribute-d
     DirectiveExperimentComponent,
     basicHighlight,
     HighlightTextBetterDirective,
+    HighlightTextBetterBindingDirective,
   ],
   imports: [
     BrowserModule,
