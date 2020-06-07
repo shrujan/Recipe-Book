@@ -31,7 +31,22 @@
                 </li>
 
             </div>
-          
+
+            <!-- using structural directive  -->
+            <div *appNgIfAlternative="onlyOdd">
+              <p>Using structual directie</p>
+
+              <li
+                  class="list-group-item"
+                  *ngFor="let number of numberEven; let i = index;"
+                  [ngClass] = "{evenColor: number % 2 === 0}"
+                  [ngStyle] = "{backgroundColor: number % 2 === 0 ? '#a2e4cf': 'transparent'}"
+
+              >
+              ({{i}}) --> {{ number }}
+              </li>
+
+          </div>
 
           
         </ul>
@@ -40,7 +55,8 @@
           <p appHighlightText>Only odd</p>
           <p appHighlightTextBetter>This is the better attribute directive using renderer</p>
 
-          <p appHighlightTextBetterBinding>This is similar to better attribute directive using host binding approach</p>
+          <!-- VID: 99 - for defaultCol you can omit the [] and ''  -->
+          <p appHighlightTextBetterBinding defaultCol="yellow" [customCol] = "'grey'">This is similar to better attribute directive using host binding approach</p>
 
           
         </ng-template>

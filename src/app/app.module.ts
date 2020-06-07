@@ -17,6 +17,7 @@ import { DirectiveExperimentComponent } from './directive-experiment/directive-e
 import { basicHighlight } from './directive-experiment/attribute-directive/basicHighlight';
 import { HighlightTextBetterDirective } from './directive-experiment/attribute-directive-better-approach/highlight-text-better.directive';
 import { HighlightTextBetterBindingDirective } from './directive-experiment/attribute-directive-better-approach/highlight-text-better-binding.directive';
+import { NgIfAlternativeDirective } from './directive-experiment/structural-directive/ng-if-alternative.directive';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { HighlightTextBetterBindingDirective } from './directive-experiment/attr
     basicHighlight,
     HighlightTextBetterDirective,
     HighlightTextBetterBindingDirective,
+    NgIfAlternativeDirective,
   ],
   imports: [
     BrowserModule,
