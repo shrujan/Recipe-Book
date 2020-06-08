@@ -12,6 +12,15 @@ import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.comp
 import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingEditComponent } from './shopping/shopping-edit/shopping-edit.component';
 
+// import { DirectiveExperimentComponent } from './directive-experiment/directive-experiment.component';
+
+//Custom Directives
+// import { basicHighlight } from './directive-experiment/attribute-directive/basicHighlight';
+// import { HighlightTextBetterDirective } from './directive-experiment/attribute-directive-better-approach/highlight-text-better.directive';
+// import { HighlightTextBetterBindingDirective } from './directive-experiment/attribute-directive-better-approach/highlight-text-better-binding.directive';
+// import { NgIfAlternativeDirective } from './directive-experiment/structural-directive/ng-if-alternative.directive';
+import { AppDropdownDirective } from './common/app-dropdown.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +31,11 @@ import { ShoppingEditComponent } from './shopping/shopping-edit/shopping-edit.co
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
-    ShoppingEditComponent
+
+    ShoppingEditComponent,
+    // DirectiveExperimentComponent,
+
+    AppDropdownDirective,
   ],
   imports: [
     BrowserModule,

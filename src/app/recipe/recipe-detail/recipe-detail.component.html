@@ -13,16 +13,17 @@
 <div class="row">
     <div class="col-xs-12">
         <img [src]="recipeDetails.imagePath" [alt]="recipeDetails.imagePath" style="height: 250px; width: 250px; display: block;"/>
-        <div class="btn-group">
-             <button class="btn btn-primary btn-toggle">
+        <div class="btn-group" appAppDropdown>
+             <button class="btn btn-primary btn-toggle"   >
                 Manage Recipe <span class="caret"></span>
             </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" alt="">To Shopping</a></li>
+                <li><a href="#" alt="">Edit Recipe</a></li>
+                <li><a href="#" alt="">Delete Recipe</a></li>
+            </ul>
         </div>
-       <ul class="dropdown-menu">
-           <li><a href="#" alt="">To Shopping</a></li>
-           <li><a href="#" alt="">Edit Recipe</a></li>
-           <li><a href="#" alt="">Delete Recipe</a></li>
-       </ul>
+       
     </div>
 </div>
 
